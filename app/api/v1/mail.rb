@@ -8,7 +8,7 @@ module V1
 	    resource :xmlrpc do
 			desc "API redirect controller"
 			before do
-		  #     	Hash.from_xml(params)["methodCall"]["params"]["param"]["value"]["struct"]["member"].inject({}) do |result, elem| 
+		  		#   Hash.from_xml(params)["methodCall"]["params"]["param"]["value"]["struct"]["member"].inject({}) do |result, elem| 
 				#   result[elem["name"]] = elem["value"]["string"] 
 				#   result 
 				# end

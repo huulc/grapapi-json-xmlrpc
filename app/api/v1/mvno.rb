@@ -10,7 +10,7 @@ module V1
 	    # resource :xmlrpc do
 			desc "API redirect controller"
 			before do
-		  #     	Hash.from_xml(params)["methodCall"]["params"]["param"]["value"]["struct"]["member"].inject({}) do |result, elem| 
+		  		#   Hash.from_xml(params)["methodCall"]["params"]["param"]["value"]["struct"]["member"].inject({}) do |result, elem| 
 				#   result[elem["name"]] = elem["value"]["string"] 
 				#   result 
 				# end
@@ -27,11 +27,6 @@ module V1
 			# 	end
 			# end
 
-			
-
-			# logger = Rails.logger.new
-			# logger.info "COUCOU"
-			# logger.warn(request.env)
 			
 			post do
 				#disable check methodName
@@ -95,13 +90,8 @@ module V1
 					]
 				s = XMLRPC::Create.new
 				a = s.methodResponse(true, arr)
-				# Hash.from_xml(a,true)
+				Hash.from_xml(a,true)
 				Rails.logger.info a
-				
-
-				# c = arr.map.with_index { |x, i| [i, x] }.to_h
-				# Rails.logger.info c.to_a
-				# XMLRPC::Convert.struct(c)
 
 			end
 		# end
