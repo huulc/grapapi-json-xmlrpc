@@ -27,3 +27,86 @@ rails s
 
 Try http://localhost:3000/api/ping or http://localhost:3000/api/protected/ping with _username_ and _password_.
 
+
+localhost:3010/extapi/xmlrpc?version=1.0
+params:
+<?xml version="1.0" encoding="utf-8"?>
+<methodCall>
+	<methodName>MOSE.MAIL.USER.authByMailAccount</methodName>
+	<params>
+		<param>
+			 <value>
+				  <struct>
+					   <member>
+							<name>ApiId</name>
+							<value>
+							 <string>1</string>
+							</value>
+					   </member>
+					   <member>
+							<name>ApiPasswd</name>
+							<value>
+							 <string>AAAA</string>
+							</value>
+					   </member>
+					   <member>
+							<name>EmailAddress</name>
+							<value>
+							 <string>test@mail.com</string>
+							</value>
+					   </member>
+					   <member>
+							<name>EmailPasswd</name>
+							<value>
+							 <string>PWWWWWW</string>
+							</value>
+					   </member>
+				  </struct>
+			 </value>
+		</param>
+	</params>
+</methodCall>
+
+
+localhost:3010/xml-rpc/kpdapi.cgi
+params:
+<?xml version="1.0" encoding="utf-8"?>
+<methodCall>
+	<methodName>MOSE.MAIL.USER.authByMailAccount</methodName>
+	<params>
+		<param>
+			 <value>
+				  <struct>
+					   <member>
+							<name>ApiId</name>
+							<value>
+							 <string>1</string>
+							</value>
+					   </member>
+					   <member>
+							<name>ApiPasswd</name>
+							<value>
+							 <string>AAAA</string>
+							</value>
+					   </member>
+					   <member>
+							<name>EmailAddress</name>
+							<value>
+							 <string>test@mail.com</string>
+							</value>
+					   </member>
+					   <member>
+							<name>EmailPasswd</name>
+							<value>
+							 <string>PWWWWWW</string>
+							</value>
+					   </member>
+				  </struct>
+			 </value>
+		</param>
+	</params>
+</methodCall>
+
+
+
+
