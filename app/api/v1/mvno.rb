@@ -90,8 +90,9 @@ module V1
 					]
 				s = XMLRPC::Create.new
 				a = s.methodResponse(true, arr)
-				Hash.from_xml(a,true)
 				Rails.logger.info a
+				Hash.from_xml(a,true)
+				
 
 			end
 		# end
