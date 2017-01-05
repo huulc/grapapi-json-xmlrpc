@@ -29,6 +29,7 @@ Try http://localhost:3000/api/ping or http://localhost:3000/api/protected/ping w
 
 
 localhost:3010/extapi/xmlrpc?version=1.0
+
 params:
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +71,7 @@ params:
 ```
 
 localhost:3010/xml-rpc/kpdapi.cgi
+
 params:
 ```
 <?xml version="1.0" encoding="utf-8"?>
